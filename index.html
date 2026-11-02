@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>wheebuy spreadsheet: Nederlandse gids voor productkeuze</title>
+  <meta name="description" content="Gebruik wheebuy spreadsheet als vertrekpunt voor productonderzoek. Vergelijk maten, materiaal en foto's en ontdek categorieën voor schoenen, kleding en accessoires.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#12263a">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="wheebuy spreadsheet: van inspiratie naar een bewuste keuze">
+  <meta property="og:description" content="Een Nederlandse keuzegids met categorieën, meetpunten en heldere antwoorden voor je productonderzoek.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=960&amp;q=80">
+  <meta property="og:image:alt" content="Rode Nike sneaker tegen een rode achtergrond">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- index.html. Voeg na publicatie een absolute canonical en og:url toe met de eigen pagina-URL. -->
+  <!--
+    Redactionele onderzoeksnotitie: Google kon niet rechtstreeks worden uitgelezen.
+    Deze tien geraadpleegde websites zijn geen geverifieerde Google-top-10.
+    sopel.fit/wheebuy-spreadsheet: categorieën, productlinks, koopstappen.
+    whee-buy.net: productonderzoek, zoekintentie, categorieën en FAQ.
+    one-to-oneyupoo.com/spreadsheets/wheebuy/: productreferenties en onafhankelijke positionering.
+    usfansyupoo.com/agents/wheebuy/: categorieën, merken, oorspronkelijke productreferenties.
+    grails.fit/wheebuy-spreadsheet: merkselectie, QC-foto's, categorieën en vragen.
+    mixfittio.com/en/spreadsheet/wheebuy: productlinks en bestelproces.
+    qcradar.com/wheebuy-spreadsheet: zoekgerichte titel, categorieën en QC-context.
+    wheespreadsheet.com: beginnersvragen, categorieën en uitleg van het proces.
+    wheebuyspreadsheet.com: categoriekeuze en koopgidsen.
+    findhaul.com/finds/wheebuy: onderscheid tussen ontdekking, variant en bestelbewijs.
+    Toegepaste redactionele keuzes: één H1, vroege categorienavigatie, concrete
+    vergelijkingscriteria en directe FAQ-antwoorden. Geen claims over hun rankings,
+    technische SEO, productaantallen, prijzen of officiële samenwerkingen overgenomen.
+    Hoofdterm: wheebuy spreadsheet.
+    Vijf secundaire zoekintenties: wheebuy spreadsheet gids; wheebuy spreadsheet
+    schoenen; wheebuy spreadsheet kleding; wheebuy spreadsheet accessoires;
+    wheebuy spreadsheet productlinks. Verwante zoekvragen zijn verwerkt in de tekst.
+  -->
+  <style>
+    :root{color-scheme:light;--navy:#12263a;--blue:#1e4f73;--ice:#e8f1f6;--paper:#f7f9fa;--white:#fff;--ink:#172e40;--muted:#506475;--line:#cddbe4;--coral:#ffb49a;--radius:10px}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+    a{color:inherit;text-underline-offset:4px}
+    a:focus-visible,summary:focus-visible{outline:3px solid #b84620;outline-offset:5px}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.15;letter-spacing:-.035em;text-wrap:balance}
+    h1{font-size:clamp(2.6rem,5.8vw,5.3rem);font-weight:780}
+    h2{font-size:clamp(1.8rem,3.5vw,3rem)}
+    h3{font-size:1.2rem}
+    p+p{margin-top:1rem}
+    img{display:block;max-width:100%;height:auto}
+    .wrap{width:min(1200px,calc(100% - 48px));margin-inline:auto}
+    .masthead{background:var(--navy);color:var(--white)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:20px}
+    .brand{text-decoration:none;font-weight:850;letter-spacing:.12em;font-size:1.1rem}
+    .brand span{font-weight:450;letter-spacing:0;color:#c2d6e5;font-size:.85rem;margin-left:14px}
+    .header-link{font-size:.85rem;text-decoration:none;border-bottom:1px solid #a2c1d6;padding-bottom:3px}
+    .category-panel{padding-block:22px;background:var(--white);border-bottom:1px solid var(--line)}
+    .category-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.13em;font-weight:750;margin-bottom:12px;color:var(--muted)}
+    .categories{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+    .categories a{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:47px;padding:10px 12px;background:var(--ice);border:1px solid transparent;border-radius:5px;text-decoration:none;font-size:.8rem;line-height:1.35}
+    .categories a::after{content:"↗";color:var(--blue);flex-shrink:0}
+    .categories a:hover{border-color:var(--blue);background:#d7e8f3}
+    .hero{background:var(--navy);color:var(--white)}
+    .hero-grid{display:grid;grid-template-columns:1.12fr 1fr;min-height:500px}
+    .hero-copy{padding:54px 45px 50px 0;align-self:center}
+    .eyebrow{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:750;margin-bottom:18px}
+    .hero .eyebrow{color:var(--coral)}
+    .hero-lead{font-size:1.07rem;color:#d0e0eb;margin-top:24px;max-width:530px}
+    .cta{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:48px;padding:12px 22px;border-radius:5px;background:var(--coral);color:var(--navy);font-weight:750;text-decoration:none;margin-top:26px}
+    .cta:hover{background:#ffc8b5}
+    .hero-figure{position:relative;background:#be2528;overflow:hidden;min-height:100%}
+    .hero-figure img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1}
+    .hero-figure figcaption{position:absolute;inset:auto 16px 16px;background:rgba(18,38,58,.92);padding:9px 12px;font-size:.75rem;color:#fff;border-radius:4px}
+    .answer-strip{display:grid;grid-template-columns:170px 1fr;gap:30px;padding:27px 30px;background:var(--ice);border-left:5px solid var(--blue);margin-block:30px 0}
+    .answer-strip strong{font-size:.85rem;color:var(--blue)}
+    .answer-strip p{font-size:.95rem}
+    .section{padding-block:60px;border-bottom:1px solid var(--line)}
+    .section-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:28px}
+    .section-head p{color:var(--muted);max-width:560px}
+    .section-number{display:block;font-size:.75rem;letter-spacing:.1em;color:var(--blue);font-weight:750;margin-bottom:12px}
+    .decision-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .decision{padding:26px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius)}
+    .decision h3{margin-bottom:14px}
+    .decision p{font-size:.94rem;color:var(--muted)}
+    .decision .tag{display:inline-block;background:var(--ice);padding:4px 9px;margin-bottom:24px;font-size:.73rem;font-weight:700;border-radius:3px}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--white)}
+    table{width:100%;border-collapse:collapse;text-align:left;font-size:.9rem}
+    caption{padding:16px 20px;text-align:left;background:var(--navy);color:var(--white);font-weight:700}
+    th,td{padding:17px 20px;vertical-align:top;border-bottom:1px solid var(--line)}
+    thead th{background:var(--ice);font-size:.8rem}
+    tbody th{width:22%;font-weight:700}
+    td{color:var(--muted)}
+    tbody tr:last-child>*{border-bottom:0}
+    .note{color:var(--muted);font-size:.83rem;margin-top:17px}
+    .visual-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .visual-card{display:grid;grid-template-columns:42% 1fr;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+    .visual-card:first-child{grid-column:1/-1;grid-template-columns:40% 1fr;background:var(--ice)}
+    .visual-card img{width:100%;aspect-ratio:1;object-fit:contain;background:#f0f1f2}
+    .visual-card figcaption{padding:24px}
+    .visual-card h3{margin-bottom:12px}
+    .visual-card p{color:var(--muted);font-size:.9rem}
+    .visual-card .label{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);font-weight:750;margin-bottom:10px}
+    .workbench{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px}
+    .workbench-intro p{margin-top:18px;color:var(--muted)}
+    .record{margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+    .record>div{background:var(--white);padding:20px}
+    .record dt{font-size:.85rem;font-weight:750;margin-bottom:8px}
+    .record dd{margin:0;font-size:.86rem;color:var(--muted)}
+    .cost-note{background:var(--navy);color:var(--white);padding:28px;border-radius:var(--radius);margin-top:24px;display:grid;grid-template-columns:1fr 1.5fr;gap:24px}
+    .cost-note h3{color:var(--coral)}
+    .cost-note p{font-size:.92rem;color:#d0e0eb}
+    .faq-layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:55px}
+    .faq-intro p{color:var(--muted);margin-top:20px}
+    details{border-top:1px solid var(--line);padding:20px 0}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{cursor:pointer;font-weight:700;line-height:1.5;padding-right:10px}
+    details p{margin-top:14px;color:var(--muted);font-size:.94rem}
+    .closing{padding-block:40px;display:flex;justify-content:space-between;align-items:center;gap:30px}
+    .closing p{max-width:680px}
+    .closing .cta{margin:0;white-space:nowrap}
+    footer{padding-block:28px;background:var(--ice);color:var(--muted);font-size:.78rem}
+    footer .wrap{display:grid;grid-template-columns:1fr auto;gap:30px}
+    footer p{max-width:850px}
+    @media(min-width:1500px){.hero-grid{min-height:550px}}
+    @media(max-width:960px){.hero-copy{padding-right:28px}.hero-grid{min-height:440px}.decision{padding:20px}.section-head{gap:26px}.visual-card{grid-template-columns:1fr}.visual-card img{aspect-ratio:4/3}.workbench,.faq-layout{gap:28px}}
+    @media(max-width:680px){.wrap{width:calc(100% - 28px)}.brand span{display:none}.header-inner{padding-block:16px}.categories{grid-template-columns:repeat(2,minmax(0,1fr))}.category-panel{padding-block:16px}.categories a{font-size:.78rem}.hero-grid,.section-head,.decision-grid,.workbench,.faq-layout{grid-template-columns:1fr}.hero-copy{padding:34px 0}.hero-figure{min-height:0;border-radius:6px 6px 0 0}.hero-figure img{aspect-ratio:4/3}.hero-lead{font-size:1rem}.answer-strip{grid-template-columns:1fr;gap:8px;padding:20px;margin-top:22px}.section{padding-block:38px}.section-head{gap:16px}.decision .tag{margin-bottom:15px}.visual-grid{grid-template-columns:1fr}.visual-card:first-child{grid-template-columns:1fr;grid-column:auto}.visual-card img{aspect-ratio:4/3}.visual-card figcaption{padding:20px}.record{grid-template-columns:1fr 1fr}.record>div{padding:15px}.cost-note{grid-template-columns:1fr;gap:12px;padding:22px}.closing{flex-direction:column;align-items:flex-start;padding-block:30px}th,td{padding:14px 12px}table{min-width:560px}.faq-layout{gap:24px}footer .wrap{grid-template-columns:1fr;gap:15px}h1{overflow-wrap:anywhere}}
+    @media(prefers-reduced-motion:no-preference){.categories a,.cta{transition:background-color .15s ease,border-color .15s ease}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"wheebuy spreadsheet: Nederlandse gids voor productkeuze",
+        "description":"Gebruik wheebuy spreadsheet als vertrekpunt voor productonderzoek. Vergelijk maten, materiaal en foto's en ontdek categorieën voor schoenen, kleding en accessoires.",
+        "inLanguage":"nl",
+        "about":{"@type":"Thing","name":"wheebuy spreadsheet"}
+      },
+      {
+        "@type":"FAQPage",
+        "inLanguage":"nl",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"Wat is een wheebuy spreadsheet?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Een wheebuy spreadsheet is een overzicht van productverwijzingen voor onderzoek rond Wheebuy. Je kunt er artikelen, varianten en controles naast elkaar zetten. Deze pagina is een onafhankelijke Nederlandstalige gids met links naar CAFANS; er staat geen downloadbaar spreadsheet of Wheebuy-bestelformulier op."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Hoe herken ik een bruikbare productlink?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Open de link en vergelijk productcode, verkoper, kleur en maat met je notitie. Controleer of de gewenste variant nog wordt getoond. Een werkende pagina bewijst op zichzelf geen voorraad, bestelbaarheid of betrouwbaarheid."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Hoe vergelijk ik schoenmaten en kledingmaten?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Gebruik de maattabel van het specifieke model en noteer centimeters. Houd voetlengte en binnenzoollengte uit elkaar. Vergelijk bij kleding dezelfde meetpunten met een passend eigen kledingstuk; een losse maatletter of EU-US-conversie geeft onvoldoende informatie."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Wat vertellen QC-foto's over een artikel?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"QC-foto's kunnen zichtbare details zoals naden, vorm en afwerking helpen beoordelen. Controleer of de foto's bij de bedoelde variant en, indien van toepassing, jouw bestelling horen. Ze bewijzen op zichzelf geen echtheid, materiaalsamenstelling of duurzaamheid."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Kan ik hier een actuele totaalprijs zien?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Nee. Deze gids toont geen actuele prijzen of verzendtarieven. Noteer productprijs, valuta, eventuele servicekosten en bezorgkosten apart. Markeer ontbrekende bedragen als onbekend en controleer de uiteindelijke totaalprijs bij de aanbieder."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Waar gaan de knoppen en categorielinks naartoe?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"De tien categorielinks openen de opgegeven categorieën op cafans.com. Alle overige links openen https://www.cafans.com. Geen van deze knoppen plaatst een bestelling bij Wheebuy."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Zijn de merkfoto's aanbiedingen op CAFANS?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Nee. De foto's van Nike, Louis Vuitton, Gucci en Hermès dienen als visuele categorievoorbeelden. Ze bevestigen geen beschikbaarheid, echtheid of officiële samenwerking. Controleer het concrete aanbod op de bestemmingspagina."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/ezmqu/">
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap header-inner">
+      <a class="brand" href="https://www.cafans.com">CAFANS <span>De keuzenotitie / NL</span></a>
+      <a class="header-link" href="https://www.cafans.com">Naar de catalogus ↗</a>
+    </div>
+  </header>
+
+  <nav class="category-panel" aria-label="Productcategorieën op CAFANS">
+    <div class="wrap">
+      <p class="category-label">Kies je vertrekpunt · categorieën op CAFANS</p>
+      <div class="categories">
+        <a href="https://cafans.com/category-911-Shoes.html" lang="en">Shoes</a>
+        <a href="https://cafans.com/category-912-Hoodies%2FSweaters.html" lang="en">Hoodies/Sweaters</a>
+        <a href="https://cafans.com/category-913-T-Shirts.html" lang="en">T-Shirts</a>
+        <a href="https://cafans.com/category-914-Jackets.html" lang="en">Jackets</a>
+        <a href="https://cafans.com/category-915-Pants%2FShorts.html" lang="en">Pants/Shorts</a>
+        <a href="https://cafans.com/category-916-Headwear.html" lang="en">Headwear</a>
+        <a href="https://cafans.com/category-917-Sets.html" lang="en">Sets</a>
+        <a href="https://cafans.com/category-918-underwear%2Funderpants.html" lang="en">Underwear/underpants</a>
+        <a href="https://cafans.com/category-919-Jersey.html" lang="en">Jersey</a>
+        <a href="https://cafans.com/category-920-Accessories.html" lang="en">Accessories</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" aria-labelledby="titel">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Een Nederlandse gids voor aandachtig kiezen</p>
+          <h1 id="titel">wheebuy spreadsheet.<br>Maak ruimte voor de juiste keuze.</h1>
+          <p class="hero-lead">Begin met een categorie. Kijk vervolgens naar pasvorm, materiaal en de exacte uitvoering. Zo wordt een verzameling productlinks een selectie waar je iets aan hebt.</p>
+          <a class="cta" href="https://www.cafans.com">Ontdek CAFANS <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="hero-figure">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=960&amp;q=80" width="960" height="960" loading="eager" fetchpriority="high" decoding="async" alt="Rode Nike sneaker met witte swoosh tegen een rode achtergrond">
+          <figcaption>Nike · visuele inspiratie voor de categorie schoenen, geen actuele aanbieding.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <aside class="answer-strip" aria-label="Kort antwoord">
+        <strong>Wat zoek je hier?</strong>
+        <p>Deze <strong>wheebuy spreadsheet gids</strong> helpt je productverwijzingen beoordelen. Je vindt categorieën op CAFANS en een praktische vergelijkingsmethode. Dit is een onafhankelijke informatiepagina, zonder spreadsheetdownload of bestelfunctie.</p>
+      </aside>
+
+      <section class="section" aria-labelledby="beginnen">
+        <div class="section-head">
+          <div>
+            <span class="section-number">01 / Je eerste selectie</span>
+            <h2 id="beginnen">Kies eerst wat je wilt weten.</h2>
+          </div>
+          <p>Bij <strong>wheebuy spreadsheet productlinks</strong> is een herkenbare foto slechts het begin. Een bruikbare selectie laat ook zien welke uitvoering je bedoelt en welke informatie nog ontbreekt.</p>
+        </div>
+        <div class="decision-grid">
+          <article class="decision">
+            <span class="tag">Ik zoek een bepaald model</span>
+            <h3>Begin bij de productcode.</h3>
+            <p>Gebruik merk, modelnaam en productcode om vergelijkbare productlinks te herkennen. Controleer daarnaast kleurvariant en verkoper. Bewaar de oorspronkelijke productlink, zodat je niet afhankelijk bent van een verkorte titel.</p>
+          </article>
+          <article class="decision">
+            <span class="tag">Ik twijfel over de pasvorm</span>
+            <h3>Begin bij de centimeters.</h3>
+            <p>Voor sneakers vergelijken heb je een modelgebonden maattabel nodig. Bij een oversized hoodie of regular fit T-shirt vergelijk je borstbreedte, ruglengte en mouwlengte met een kledingstuk dat goed zit.</p>
+          </article>
+          <article class="decision">
+            <span class="tag">Ik zoek een detail of accessoire</span>
+            <h3>Begin bij de afmetingen.</h3>
+            <p>Een pet met verstelbare sluiting, een armband of een sieraad vraagt om andere gegevens. Noteer hoofdomtrek, polsomtrek of de lengte van een ketting. Bekijk daarna sluiting, afwerking en draagwijze.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="vergelijken">
+        <div class="section-head">
+          <div>
+            <span class="section-number">02 / Van foto naar meetpunt</span>
+            <h2 id="vergelijken">Schoenen en kleding vragen om andere controles.</h2>
+          </div>
+          <p>Zoek je <strong>wheebuy spreadsheet schoenen</strong> of <strong>wheebuy spreadsheet kleding</strong>? Gebruik de tabel als korte checklist. Leg dezelfde gegevens naast elkaar, ook wanneer de producttitels verschillen.</p>
+        </div>
+        <div class="table-wrap" role="region" aria-label="Vergelijkingscriteria per productcategorie" tabindex="0">
+          <table>
+            <caption>Welke informatie maakt jouw vergelijking bruikbaar?</caption>
+            <thead>
+              <tr>
+                <th scope="col">Categorie</th>
+                <th scope="col">Noteer dit</th>
+                <th scope="col">Controleer dit detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Schoenen</th>
+                <td>Voetlengte in centimeters, modelcode, kleur en maattabel.</td>
+                <td>Maak onderscheid tussen voetlengte en binnenzoollengte. Gebruik een EU-US-maatconversie alleen samen met de modelinformatie.</td>
+              </tr>
+              <tr>
+                <th scope="row">Hoodies en truien</th>
+                <td>Borstbreedte, schouderbreedte, ruglengte en mouwlengte.</td>
+                <td>Een oversized pasvorm zegt weinig over de precieze afmetingen. Bekijk ook boorden en de afwerking van naden.</td>
+              </tr>
+              <tr>
+                <th scope="row">T-shirts en jerseys</th>
+                <td>Lengte, breedte, opgegeven materiaalsamenstelling en opdruk.</td>
+                <td>Voor een voetbalshirt vergelijken zijn ook de bedrukking en gekozen uitvoering relevant. Een foto vertelt niet hoe dik een stof is.</td>
+              </tr>
+              <tr>
+                <th scope="row">Jassen</th>
+                <td>Ruimte rond borst en schouders, mouwmaat, voering en sluiting.</td>
+                <td>Een jas voor laagjes heeft ruimte nodig voor de kleding eronder. Controleer ritsen, zakken en eventuele capuchon.</td>
+              </tr>
+              <tr>
+                <th scope="row">Broeken en shorts</th>
+                <td>Taillewijdte, heupmaat, binnenbeenlengte en pijpopening.</td>
+                <td>Bij cargo broeken vergelijken tellen ook zakvolume en beenvorm mee. Noteer of de taille elastisch of verstelbaar is.</td>
+              </tr>
+              <tr>
+                <th scope="row">Sets en ondergoed</th>
+                <td>Afzonderlijke maten van boven- en onderstuk, materiaal en opgegeven rek.</td>
+                <td>Controleer bij een tweedelige set beide delen. Lees voor ondergoed vooraf de retourvoorwaarden van de aanbieder.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Meet op dezelfde manier: een plat gemeten borstbreedte is een andere waarde dan een borstomtrek. Neem het meetdiagram van de betreffende productpagina als uitgangspunt.</p>
+      </section>
+
+      <section class="section" aria-labelledby="details">
+        <div class="section-head">
+          <div>
+            <span class="section-number">03 / De details maken het verschil</span>
+            <h2 id="details">Bekijk vorm, verhouding en afwerking.</h2>
+          </div>
+          <p>Voor <strong>wheebuy spreadsheet accessoires</strong> zijn duidelijke afmetingen vaak waardevoller dan extra overzichtsfoto's. De onderstaande merkbeelden illustreren kleding, hoofddeksels en sieraden.</p>
+        </div>
+        <div class="visual-grid">
+          <figure class="visual-card">
+            <img src="https://runwaydoor.com/cdn/shop/files/10445766.jpg?v=1770983641" width="800" height="800" loading="lazy" decoding="async" alt="Wit Gucci T-shirt met korte mouwen en een kleine logo-opdruk op de borst">
+            <figcaption>
+              <span class="label">Gucci / kleding</span>
+              <h3>Dezelfde kleur is nog niet dezelfde uitvoering.</h3>
+              <p>Controleer bij een wit T-shirt de plaats van de opdruk, de halslijn en de vorm van de mouwen. Noteer de materiaalsamenstelling zoals de aanbieder die vermeldt. Trek uit een productfoto geen conclusie over stofgewicht of draagcomfort.</p>
+            </figcaption>
+          </figure>
+          <figure class="visual-card">
+            <img src="https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-surplus-cotton-cap--M5718M_PM2_Front%20view.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Louis Vuitton Monogram Surplus pet met gebogen klep, van voren gezien">
+            <figcaption>
+              <span class="label">Louis Vuitton / hoofddeksels</span>
+              <h3>Een pet past ook in de diepte.</h3>
+              <p>Bekijk naast hoofdomtrek en verstelbereik ook de hoogte van de pet en de lengte van de klep. Vraag om ontbrekende afmetingen wanneer pasvorm belangrijk voor je is.</p>
+            </figcaption>
+          </figure>
+          <figure class="visual-card">
+            <img src="https://assets.hermes.com/is/image/hermesproduct/700001FP01_front_wm_101?%24product_default_bg%24=" width="480" height="480" loading="lazy" decoding="async" alt="Zwarte Hermès Clic H armband met zilverkleurige H-sluiting">
+            <figcaption>
+              <span class="label">Hermès / sieraden</span>
+              <h3>Vergelijk de juiste omtrek.</h3>
+              <p>Voor een armbandmaat kiezen vergelijk je polsomtrek met de maattabel van het model. Houd de binnenomtrek en de breedte van de armband apart en controleer het sluitingsmechanisme.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="note">Externe beeldbronnen: Unsplash, Runway Door, Louis Vuitton en Hermès. De afbeeldingen zijn categorievoorbeelden en bevestigen geen voorraad of echtheid van producten op CAFANS. Merknamen blijven eigendom van hun rechthebbenden.</p>
+      </section>
+
+      <section class="section" aria-labelledby="notities">
+        <div class="workbench">
+          <div class="workbench-intro">
+            <span class="section-number">04 / Een overzicht dat je kunt bijhouden</span>
+            <h2 id="notities">Geef iedere kandidaat een duidelijke notitie.</h2>
+            <p>Een productvergelijking bijhouden werkt beter met vaste velden. Gebruik onderstaande indeling in je eigen spreadsheet. Bewaar één uitvoering per regel en geef een onduidelijk gegeven expliciet de status ‘nog controleren’.</p>
+            <p>Wil je dubbele productlinks herkennen? Vergelijk productcode, verkoper en variant. Twee verschillende paginatitels kunnen naar hetzelfde artikel verwijzen.</p>
+          </div>
+          <dl class="record">
+            <div>
+              <dt>Identiteit</dt>
+              <dd>Productnaam, oorspronkelijke URL, verkoper en artikelcode. Noteer ook de datum van je laatste controle.</dd>
+            </div>
+            <div>
+              <dt>Gekozen variant</dt>
+              <dd>Kleur, maat, uitvoering en eventuele opties. Controleer of de geselecteerde variant op de bestemmingspagina klopt.</dd>
+            </div>
+            <div>
+              <dt>Pasvorm en materiaal</dt>
+              <dd>Afmetingen in centimeters, meetmethode, opgegeven samenstelling en onderhoudsinstructies.</dd>
+            </div>
+            <div>
+              <dt>Fotografische controle</dt>
+              <dd>Overzichtsfoto's, detailfoto's en eventuele QC-foto's. Houd referentiefoto's en foto's van een specifieke bestelling uit elkaar.</dd>
+            </div>
+            <div>
+              <dt>Kosten en voorwaarden</dt>
+              <dd>Vermelde prijs en valuta, eventuele bijkomende kosten en retourvoorwaarden. Een leeg bedrag is geen nul.</dd>
+            </div>
+            <div>
+              <dt>Volgende actie</dt>
+              <dd>Bewaren, opnieuw controleren of verwijderen. Noteer de concrete vraag die je nog aan de aanbieder wilt stellen.</dd>
+            </div>
+          </dl>
+        </div>
+        <aside class="cost-note" aria-labelledby="kosten">
+          <h3 id="kosten">Een prijsvergelijking begint bij dezelfde uitgangspunten.</h3>
+          <p>Vergelijk dezelfde variant en hoeveelheid. Zet productprijs, eventuele binnenlandse bezorging, servicekosten, internationale verzending en overige opgegeven kosten apart. Controleer valuta en wisselkoers. Deze gids geeft geen actuele prijs-, voorraad- of verzendgaranties.</p>
+        </aside>
+      </section>
+
+      <section class="section faq-layout" aria-labelledby="faq">
+        <div class="faq-intro">
+          <span class="section-number">05 / Veelgestelde vragen</span>
+          <h2 id="faq">Een helder antwoord voordat je verdergaat.</h2>
+          <p>Van productlinks controleren tot QC-foto's beoordelen: hier vind je de belangrijkste verschillen tussen inspiratie, een productvermelding en een bevestigde bestelling.</p>
+        </div>
+        <div>
+          <details open>
+            <summary>Wat is een wheebuy spreadsheet?</summary>
+            <p>Een wheebuy spreadsheet is een overzicht van productverwijzingen voor onderzoek rond Wheebuy. Je kunt er artikelen, varianten en controles naast elkaar zetten. Deze pagina is een onafhankelijke Nederlandstalige gids met links naar CAFANS; er staat geen downloadbaar spreadsheet of Wheebuy-bestelformulier op.</p>
+          </details>
+          <details>
+            <summary>Hoe herken ik een bruikbare productlink?</summary>
+            <p>Open de link en vergelijk productcode, verkoper, kleur en maat met je notitie. Controleer of de gewenste variant nog wordt getoond. Een werkende pagina bewijst op zichzelf geen voorraad, bestelbaarheid of betrouwbaarheid.</p>
+          </details>
+          <details>
+            <summary>Hoe vergelijk ik schoenmaten en kledingmaten?</summary>
+            <p>Gebruik de maattabel van het specifieke model en noteer centimeters. Houd voetlengte en binnenzoollengte uit elkaar. Vergelijk bij kleding dezelfde meetpunten met een passend eigen kledingstuk; een losse maatletter of EU-US-conversie geeft onvoldoende informatie.</p>
+          </details>
+          <details>
+            <summary>Wat vertellen QC-foto's over een artikel?</summary>
+            <p>QC-foto's kunnen zichtbare details zoals naden, vorm en afwerking helpen beoordelen. Controleer of de foto's bij de bedoelde variant en, indien van toepassing, jouw bestelling horen. Ze bewijzen op zichzelf geen echtheid, materiaalsamenstelling of duurzaamheid.</p>
+          </details>
+          <details>
+            <summary>Kan ik hier een actuele totaalprijs zien?</summary>
+            <p>Nee. Deze gids toont geen actuele prijzen of verzendtarieven. Noteer productprijs, valuta, eventuele servicekosten en bezorgkosten apart. Markeer ontbrekende bedragen als onbekend en controleer de uiteindelijke totaalprijs bij de aanbieder.</p>
+          </details>
+          <details>
+            <summary>Waar gaan de knoppen en categorielinks naartoe?</summary>
+            <p>De tien categorielinks openen de opgegeven categorieën op cafans.com. Alle overige links openen https://www.cafans.com. Geen van deze knoppen plaatst een bestelling bij Wheebuy.</p>
+          </details>
+          <details>
+            <summary>Zijn de merkfoto's aanbiedingen op CAFANS?</summary>
+            <p>Nee. De foto's van Nike, Louis Vuitton, Gucci en Hermès dienen als visuele categorievoorbeelden. Ze bevestigen geen beschikbaarheid, echtheid of officiële samenwerking. Controleer het concrete aanbod op de bestemmingspagina.</p>
+          </details>
+        </div>
+      </section>
+
+      <div class="closing">
+        <p><strong>Begin klein: één categorie, één duidelijke vergelijking.</strong><br>Bekijk het aanbod op CAFANS en leg alleen de informatie vast die je keuze werkelijk helpt.</p>
+        <a class="cta" href="https://www.cafans.com">Verder naar CAFANS <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Onafhankelijke Nederlandstalige keuzegids. Geen officiële band met Wheebuy, Nike, Louis Vuitton, Gucci of Hermès. Deze pagina verkoopt geen producten. Controleer productinformatie en voorwaarden bij de aanbieder.</p>
+      <a href="https://www.cafans.com">CAFANS ↗</a>
+    </div>
+  </footer>
+</body>
+</html>
